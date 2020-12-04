@@ -7,5 +7,8 @@ count : main.o
 main.o: main.cc
 	g++ -Wall -c main.cc
 
+doc: Doxyfile
+	doxygen Doxyfile
+
 clean :
 	rm -f *.o all core *.core

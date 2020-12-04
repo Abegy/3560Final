@@ -1,8 +1,10 @@
-/*
-Aaron Begy
-Hands-On CS 3560 
-12/3/2020
-*/
+/**
+ * @file main.cc
+ * @brief program to take an input txt file and output the amount of characters and lines the file has
+ * @author Aaron Begy
+ * 
+ */
+
 
 #include <fstream>
 #include <cstdlib>
@@ -12,6 +14,13 @@ using namespace std;
 
 int countChar(string input);
 int countLine(string input);
+
+/**
+ * @file main.cc
+ * @fn main
+ * @brief this will run the programs functions in a way decided by the user, and then output the test results
+ * @param argc is the number of arguments 
+ */
 
 
 int main(int argc, char *argv[])
@@ -46,7 +55,11 @@ int main(int argc, char *argv[])
     input.close();
     return 0;
 }
-
+/**
+ * @file main.cc
+ * @fn countLine
+ * @brief outputs the number of lines in a string
+ */
 int countLine(string pName)
 {
     int count = 1;
@@ -59,7 +72,11 @@ int countLine(string pName)
     }
     return count; 
 }
-
+/**
+ * @file main.cc
+ * @fn countChar
+ * @brief this function will output the number of characters 
+ */
 int countChar(string pName)
 {
     return pName.size();
